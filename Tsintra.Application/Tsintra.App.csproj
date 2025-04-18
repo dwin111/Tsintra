@@ -7,8 +7,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Extensions\" />
-    <Folder Include="Services\" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tsintra.Domain\Tsintra.Core.csproj" />
+    <ProjectReference Include="..\Tsintra.Infrastructure\Tsintra.Infrastructure.csproj" />
+    <ProjectReference Include="..\Tsintra.Integrations\Tsintra.Integrations.csproj" />
+    <ProjectReference Include="..\Tsintra.Persistence\Tsintra.Persistence.csproj" />
+    <ProjectReference Include="..\Tsintra.MarketplaceAgent\Tsintra.MarketplaceAgent.csproj" />
   </ItemGroup>
 
 </Project>

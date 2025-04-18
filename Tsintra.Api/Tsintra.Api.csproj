@@ -9,12 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis.Auth" Version="1.69.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="8.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.2" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Tsintra.Application\Tsintra.App.csproj" />
+    <ProjectReference Include="..\Tsintra.Domain\Tsintra.Core.csproj" />
+    <ProjectReference Include="..\Tsintra.Infrastructure\Tsintra.Infrastructure.csproj" />
     <ProjectReference Include="..\Tsintra.Integrations\Tsintra.Integrations.csproj" />
+    <ProjectReference Include="..\Tsintra.MarketplaceAgent\Tsintra.MarketplaceAgent.csproj" />
+    <ProjectReference Include="..\Tsintra.Persistence\Tsintra.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

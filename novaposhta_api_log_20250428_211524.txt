@@ -1,0 +1,293 @@
+[2025-04-28 21:15:24.728] Запуск тестування API Нової Пошти
+[2025-04-28 21:15:24.730] Місто для пошуку: Київ
+[2025-04-28 21:15:24.730] Вулиця для пошуку: Хрещатик
+[2025-04-28 21:15:24.750] Використовую API URL: https://api.novaposhta.ua/v2.0/json/
+[2025-04-28 21:15:24.750] API Key: c21be... (прихований для безпеки)
+
+[2025-04-28 21:15:24.760] Налаштовано HTTP клієнт з User-Agent: Tsintra-Debug-Tool/1.0
+[2025-04-28 21:15:24.761] Починаємо тест пошуку міст
+[2025-04-28 21:15:24.763] 
+====== ТЕСТ 1: Пошук міста 'Київ' ======
+[2025-04-28 21:15:24.783] Відправляємо запит: {
+  "apiKey": "c21beade8033161a85d038d83805e62d",
+  "modelName": "Address",
+  "calledMethod": "searchSettlements",
+  "methodProperties": {
+    "CityName": "\u041A\u0438\u0457\u0432",
+    "Limit": 10
+  }
+}
+[2025-04-28 21:15:24.784] Content-Type: application/json; charset=utf-8
+[2025-04-28 21:15:24.784] Content-Length: 212 bytes
+[2025-04-28 21:15:24.784] Виконуємо запит через HttpClient.PostAsync...
+[2025-04-28 21:15:26.577] Час виконання запиту: 1792 мс
+[2025-04-28 21:15:26.579] Статус відповіді: 200 OK
+[2025-04-28 21:15:26.579] Заголовки відповіді:
+[2025-04-28 21:15:26.579]   Server: nginx
+[2025-04-28 21:15:26.580]   Date: Mon, 28 Apr 2025 18:15:26 GMT
+[2025-04-28 21:15:26.580]   Transfer-Encoding: chunked
+[2025-04-28 21:15:26.580]   Connection: keep-alive
+[2025-04-28 21:15:26.580]   Vary: Accept-Encoding, Accept-Encoding
+[2025-04-28 21:15:26.580]   Set-Cookie: PHPSESSID=3rakd6ghl3bq64ovtthtbmkgmd; path=/, YIICSRFTOKEN=8a4a0210c900c3a55c7b260bb1999008ce364420s%3A88%3A%22YlllQnIyWFcyeGE0V2pKV2hfSHpkUEhaTDZ1MERVdXObtk5L-iPo4rQ05tJrpBtqa3b-GQS-qT_iidLNaA7FVg%3D%3D%22%3B; path=/
+[2025-04-28 21:15:26.580]   X-Cached: BYPASS
+[2025-04-28 21:15:26.581] Content-Length відповіді: 7753 символів
+[2025-04-28 21:15:26.581] Отримана відповідь: {"success":true,"data":[{"TotalCount":9,"Addresses":[{"Present":"\u043c. \u041a\u0438\u0457\u0432, \u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":9681,"MainDescription":"\u041a\u0438\u0457\u0432","Area":"\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0430","Region":"","SettlementTypeCode":"\u043c.","Ref":"e718a680-4b33-11e4-ab6d-005056801329","DeliveryCity":"8d5a980d-391c-11dd-90d9-001a92567626","AddressDeliveryAllowed":true,"StreetsAvailability":true,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"","RegionTypesCode":""},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u0435\u0446\u044c, \u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":2,"MainDescription":"\u041a\u0438\u0457\u0432\u0435\u0446\u044c","Area":"\u041b\u044c\u0432\u0456\u0432\u0441\u044c\u043a\u0430","Region":"\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0df25497-4b3a-11e4-ab6d-005056801329","DeliveryCity":"6dbe5985-96d1-11ea-a970-b8830365ade4","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432, \u0412\u043e\u0437\u043d\u0435\u0441\u0435\u043d\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432","Area":"\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430","Region":"\u0412\u043e\u0437\u043d\u0435\u0441\u0435\u043d\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0db2df4b-4b3a-11e4-ab6d-005056801329","DeliveryCity":"06f8795a-4079-11de-b509-001d92f78698","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u043a\u0430, \u0413\u043e\u043b\u043e\u043f\u0440\u0438\u0441\u0442\u0430\u043d\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u0425\u0435\u0440\u0441\u043e\u043d\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432\u043a\u0430","Area":"\u0425\u0435\u0440\u0441\u043e\u043d\u0441\u044c\u043a\u0430","Region":"\u0413\u043e\u043b\u043e\u043f\u0440\u0438\u0441\u0442\u0430\u043d\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0dd153b3-4b3a-11e4-ab6d-005056801329","DeliveryCity":"fd249301-887a-11e9-898c-005056b24375","AddressDeliveryAllowed":false,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435, \u041d\u043e\u0432\u043e\u043c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u0417\u0430\u043f\u043e\u0440\u0456\u0437\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435","Area":"\u0417\u0430\u043f\u043e\u0440\u0456\u0437\u044c\u043a\u0430","Region":"\u041d\u043e\u0432\u043e\u043c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0e40bf5a-4b3a-11e4-ab6d-005056801329","DeliveryCity":"cfbeaca4-4063-11de-b509-001d92f78698","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435, \u0411\u0430\u0448\u0442\u0430\u043d\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435","Area":"\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430","Region":"\u0411\u0430\u0448\u0442\u0430\u043d\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0d94f546-4b3a-11e4-ab6d-005056801329","DeliveryCity":"000655dc-4079-11de-b509-001d92f78698","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435, \u041d\u043e\u0432\u043e\u043e\u0434\u0435\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435","Area":"\u041c\u0438\u043a\u043e\u043b\u0430\u0457\u0432\u0441\u044c\u043a\u0430","Region":"\u041d\u043e\u0432\u043e\u043e\u0434\u0435\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0dc2dec1-4b3a-11e4-ab6d-005056801329","DeliveryCity":"000655d8-4079-11de-b509-001d92f78698","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435, \u0413\u0430\u0434\u044f\u0446\u044c\u043a\u0438\u0439 \u0440-\u043d, \u041f\u043e\u043b\u0442\u0430\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435","Area":"\u041f\u043e\u043b\u0442\u0430\u0432\u0441\u044c\u043a\u0430","Region":"\u0413\u0430\u0434\u044f\u0446\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0e1c492c-4b3a-11e4-ab6d-005056801329","DeliveryCity":"7833e610-3b51-11de-913b-001d92f78698","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"},{"Present":"\u0441. \u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435, \u0421\u0438\u043d\u0435\u043b\u044c\u043d\u0438\u043a\u0456\u0432\u0441\u044c\u043a\u0438\u0439 \u0440-\u043d, \u0414\u043d\u0456\u043f\u0440\u043e\u043f\u0435\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0430 \u043e\u0431\u043b.","Warehouses":0,"MainDescription":"\u041a\u0438\u0457\u0432\u0441\u044c\u043a\u0435","Area":"\u0414\u043d\u0456\u043f\u0440\u043e\u043f\u0435\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0430","Region":"\u0421\u0438\u043d\u0435\u043b\u044c\u043d\u0438\u043a\u0456\u0432\u0441\u044c\u043a\u0438\u0439","SettlementTypeCode":"\u0441.","Ref":"0e117408-4b3a-11e4-ab6d-005056801329","DeliveryCity":"69da419c-3f5d-11de-b509-001d92f78698","AddressDeliveryAllowed":true,"StreetsAvailability":false,"ParentRegionTypes":"\u043e\u0431\u043b\u0430\u0441\u0442\u044c","ParentRegionCode":"\u043e\u0431\u043b.","RegionTypes":"\u0440\u0430\u0439\u043e\u043d","RegionTypesCode":"\u0440-\u043d"}]}],"errors":[],"warnings":[],"info":[],"messageCodes":[],"errorCodes":[],"warningCodes":[],"infoCodes":[]}
+
+[2025-04-28 21:15:26.586] Успішний запит до API Нової Пошти!
+[2025-04-28 21:15:26.586] Знайдено 9 населених пунктів:
+[2025-04-28 21:15:26.586] - м. Київ, Київська обл.
+[2025-04-28 21:15:26.586]   Ref: e718a680-4b33-11e4-ab6d-005056801329 (буде використано для наступного тесту)
+[2025-04-28 21:15:26.586] - с. Київець, Миколаївський р-н, Львівська обл.
+[2025-04-28 21:15:26.587] - с. Київ, Вознесенський р-н, Миколаївська обл.
+[2025-04-28 21:15:26.587] - с. Київка, Голопристанський р-н, Херсонська обл.
+[2025-04-28 21:15:26.587] - с. Київське, Новомиколаївський р-н, Запорізька обл.
+[2025-04-28 21:15:26.587] - с. Київське, Баштанський р-н, Миколаївська обл.
+[2025-04-28 21:15:26.587] - с. Київське, Новоодеський р-н, Миколаївська обл.
+[2025-04-28 21:15:26.587] - с. Київське, Гадяцький р-н, Полтавська обл.
+[2025-04-28 21:15:26.587] - с. Київське, Синельниківський р-н, Дніпропетровська обл.
+[2025-04-28 21:15:26.587] Починаємо тест пошуку вулиць
+[2025-04-28 21:15:26.589] 
+====== ТЕСТ 2: Пошук вулиць в населеному пункті для 'Хрещатик' ======
+[2025-04-28 21:15:26.589] Використовую Ref населеного пункту: e718a680-4b33-11e4-ab6d-005056801329
+[2025-04-28 21:15:26.591] Відправляємо запит: {
+  "apiKey": "c21beade8033161a85d038d83805e62d",
+  "modelName": "Address",
+  "calledMethod": "searchSettlementStreets",
+  "methodProperties": {
+    "SettlementRef": "e718a680-4b33-11e4-ab6d-005056801329",
+    "StreetName": "\u0425\u0440\u0435\u0449\u0430\u0442\u0438\u043A",
+    "Limit": 10
+  }
+}
+[2025-04-28 21:15:26.920] Час виконання запиту: 329 мс
+[2025-04-28 21:15:26.921] Статус відповіді: 200 OK
+[2025-04-28 21:15:26.921] Отримана відповідь (перших 500 символів): {"success":false,"data":[],"errors":["SettlementRef is invalid"],"warnings":[],"info":[],"messageCodes":[],"errorCodes":["20000500626"],"warningCodes":[],"infoCodes":[]}...
+
+[2025-04-28 21:15:26.921] Помилка у відповіді API:
+[2025-04-28 21:15:26.921] - SettlementRef is invalid
+[2025-04-28 21:15:26.921] 
+====== ТЕСТ 3: Тестування StreetSearch з використанням окремого HTTP клієнта ======
+[2025-04-28 21:15:26.923] Пошук міста: Київ
+[2025-04-28 21:15:26.925] Запит пошуку міста: {
+  "apiKey": "c21beade8033161a85d038d83805e62d",
+  "modelName": "Address",
+  "calledMethod": "searchSettlements",
+  "methodProperties": {
+    "CityName": "\u041A\u0438\u0457\u0432",
+    "Limit": 20
+  }
+}
+[2025-04-28 21:15:26.926] Виконання запиту до API...
+[2025-04-28 21:15:28.448] Час виконання запиту: 1521 мс
+[2025-04-28 21:15:28.448] Статус відповіді: 200 OK
+[2025-04-28 21:15:28.448] Отримано відповідь довжиною 7753 символів
+[2025-04-28 21:15:28.457] Відповідь пошуку міста: {
+  "success": true,
+  "data": [
+    {
+      "TotalCount": 9,
+      "Addresses": [
+        {
+          "Present": "\u043C. \u041A\u0438\u0457\u0432, \u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 9681,
+          "MainDescription": "\u041A\u0438\u0457\u0432",
+          "Area": "\u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0430",
+          "Region": "",
+          "SettlementTypeCode": "\u043C.",
+          "Ref": "e718a680-4b33-11e4-ab6d-005056801329",
+          "DeliveryCity": "8d5a980d-391c-11dd-90d9-001a92567626",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": true,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "",
+          "RegionTypesCode": ""
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u0435\u0446\u044C, \u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u041B\u044C\u0432\u0456\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 2,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u0435\u0446\u044C",
+          "Area": "\u041B\u044C\u0432\u0456\u0432\u0441\u044C\u043A\u0430",
+          "Region": "\u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0df25497-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "6dbe5985-96d1-11ea-a970-b8830365ade4",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432, \u0412\u043E\u0437\u043D\u0435\u0441\u0435\u043D\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432",
+          "Area": "\u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0430",
+          "Region": "\u0412\u043E\u0437\u043D\u0435\u0441\u0435\u043D\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0db2df4b-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "06f8795a-4079-11de-b509-001d92f78698",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u043A\u0430, \u0413\u043E\u043B\u043E\u043F\u0440\u0438\u0441\u0442\u0430\u043D\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u0425\u0435\u0440\u0441\u043E\u043D\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u043A\u0430",
+          "Area": "\u0425\u0435\u0440\u0441\u043E\u043D\u0441\u044C\u043A\u0430",
+          "Region": "\u0413\u043E\u043B\u043E\u043F\u0440\u0438\u0441\u0442\u0430\u043D\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0dd153b3-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "fd249301-887a-11e9-898c-005056b24375",
+          "AddressDeliveryAllowed": false,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435, \u041D\u043E\u0432\u043E\u043C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u0417\u0430\u043F\u043E\u0440\u0456\u0437\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435",
+          "Area": "\u0417\u0430\u043F\u043E\u0440\u0456\u0437\u044C\u043A\u0430",
+          "Region": "\u041D\u043E\u0432\u043E\u043C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0e40bf5a-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "cfbeaca4-4063-11de-b509-001d92f78698",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435, \u0411\u0430\u0448\u0442\u0430\u043D\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435",
+          "Area": "\u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0430",
+          "Region": "\u0411\u0430\u0448\u0442\u0430\u043D\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0d94f546-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "000655dc-4079-11de-b509-001d92f78698",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435, \u041D\u043E\u0432\u043E\u043E\u0434\u0435\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435",
+          "Area": "\u041C\u0438\u043A\u043E\u043B\u0430\u0457\u0432\u0441\u044C\u043A\u0430",
+          "Region": "\u041D\u043E\u0432\u043E\u043E\u0434\u0435\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0dc2dec1-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "000655d8-4079-11de-b509-001d92f78698",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435, \u0413\u0430\u0434\u044F\u0446\u044C\u043A\u0438\u0439 \u0440-\u043D, \u041F\u043E\u043B\u0442\u0430\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435",
+          "Area": "\u041F\u043E\u043B\u0442\u0430\u0432\u0441\u044C\u043A\u0430",
+          "Region": "\u0413\u0430\u0434\u044F\u0446\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0e1c492c-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "7833e610-3b51-11de-913b-001d92f78698",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        },
+        {
+          "Present": "\u0441. \u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435, \u0421\u0438\u043D\u0435\u043B\u044C\u043D\u0438\u043A\u0456\u0432\u0441\u044C\u043A\u0438\u0439 \u0440-\u043D, \u0414\u043D\u0456\u043F\u0440\u043E\u043F\u0435\u0442\u0440\u043E\u0432\u0441\u044C\u043A\u0430 \u043E\u0431\u043B.",
+          "Warehouses": 0,
+          "MainDescription": "\u041A\u0438\u0457\u0432\u0441\u044C\u043A\u0435",
+          "Area": "\u0414\u043D\u0456\u043F\u0440\u043E\u043F\u0435\u0442\u0440\u043E\u0432\u0441\u044C\u043A\u0430",
+          "Region": "\u0421\u0438\u043D\u0435\u043B\u044C\u043D\u0438\u043A\u0456\u0432\u0441\u044C\u043A\u0438\u0439",
+          "SettlementTypeCode": "\u0441.",
+          "Ref": "0e117408-4b3a-11e4-ab6d-005056801329",
+          "DeliveryCity": "69da419c-3f5d-11de-b509-001d92f78698",
+          "AddressDeliveryAllowed": true,
+          "StreetsAvailability": false,
+          "ParentRegionTypes": "\u043E\u0431\u043B\u0430\u0441\u0442\u044C",
+          "ParentRegionCode": "\u043E\u0431\u043B.",
+          "RegionTypes": "\u0440\u0430\u0439\u043E\u043D",
+          "RegionTypesCode": "\u0440-\u043D"
+        }
+      ]
+    }
+  ],
+  "info": [],
+  "errors": [],
+  "warnings": [],
+  "messageCodes": [],
+  "errorCodes": [],
+  "warningCodes": [],
+  "infoCodes": []
+}
+[2025-04-28 21:15:28.515] Знайдено Ref населеного пункту: e718a680-4b33-11e4-ab6d-005056801329
+[2025-04-28 21:15:28.515] Запит пошуку вулиці 'Хрещатик': {
+  "apiKey": "c21beade8033161a85d038d83805e62d",
+  "modelName": "Address",
+  "calledMethod": "searchSettlementStreets",
+  "methodProperties": {
+    "SettlementRef": "e718a680-4b33-11e4-ab6d-005056801329",
+    "StreetName": "\u0425\u0440\u0435\u0449\u0430\u0442\u0438\u043A",
+    "Limit": 20
+  }
+}
+[2025-04-28 21:15:28.516] Виконання запиту до API...
+[2025-04-28 21:15:30.022] Час виконання запиту: 1506 мс
+[2025-04-28 21:15:30.023] Статус відповіді: 200 OK
+[2025-04-28 21:15:30.023] Отримано відповідь довжиною 683 символів
+[2025-04-28 21:15:30.023] Відповідь пошуку вулиці: {
+  "success": true,
+  "data": [
+    {
+      "TotalCount": 1,
+      "Addresses": [
+        {
+          "SettlementRef": "e718a680-4b33-11e4-ab6d-005056801329",
+          "SettlementStreetRef": "ad090b1f-6845-11e6-8304-00505688561d",
+          "SettlementStreetDescription": "\u0425\u0440\u0435\u0449\u0430\u0442\u0438\u043A",
+          "Present": "\u0432\u0443\u043B. \u0425\u0440\u0435\u0449\u0430\u0442\u0438\u043A",
+          "StreetsType": "0f1d7fbb-4bba-11e4-ab6d-005056801329",
+          "StreetsTypeDescription": "\u0432\u0443\u043B.",
+          "Location": {
+            "lat": 50.44806099962443,
+            "lon": 30.52225599065423
+          },
+          "SettlementStreetDescriptionRu": "\u041A\u0440\u0435\u0449\u0430\u0442\u0438\u043A"
+        }
+      ]
+    }
+  ],
+  "info": [],
+  "errors": [],
+  "warnings": [],
+  "messageCodes": [],
+  "errorCodes": [],
+  "warningCodes": [],
+  "infoCodes": []
+}
+[2025-04-28 21:15:30.024] Знайдено 1 вулиць:
+[2025-04-28 21:15:30.025] Вулиця: Невідомо / 
+[2025-04-28 21:15:30.026] Тестування завершено
+[2025-04-28 21:15:30.026] Файл логу збережено: C:\Users\mrdey\source\repos\Tsintra\novaposhta_api_log_20250428_211524.txt

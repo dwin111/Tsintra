@@ -1,12 +1,13 @@
 ﻿using System;
 using OpenAI.Images;
-using Tsintra.App.Models;
+using Tsintra.Core.Models;
+using Tsintra.Domain.Models;
 
 namespace Tsintra.Integrations.OpenAI.Mapping
 {
     public static class ImageMapping
     {
-        public static GeneratedImageQuality Map(ImageQuality quality) => quality switch
+        public static GeneratedImageQuality Map(this ImageQuality quality) => quality switch
         {
             ImageQuality.Standard => GeneratedImageQuality.Standard,
             ImageQuality.High => GeneratedImageQuality.High,
@@ -14,7 +15,7 @@ namespace Tsintra.Integrations.OpenAI.Mapping
                 nameof(quality), quality, "Непідтримувана якість зображення")
         };
 
-        public static GeneratedImageSize Map(ImageSize size) => size switch
+        public static GeneratedImageSize Map(this ImageSize size) => size switch
         {
             ImageSize.W256xH256 => GeneratedImageSize.W256xH256,
             ImageSize.W512xH512 => GeneratedImageSize.W512xH512,
@@ -23,7 +24,7 @@ namespace Tsintra.Integrations.OpenAI.Mapping
                 nameof(size), size, "Непідтримуваний розмір зображення")
         };
 
-        public static GeneratedImageStyle Map(ImageStyle style) => style switch
+        public static GeneratedImageStyle Map(this ImageStyle style) => style switch
         {
             ImageStyle.Natural => GeneratedImageStyle.Natural,
             ImageStyle.Vivid => GeneratedImageStyle.Vivid,
@@ -31,7 +32,7 @@ namespace Tsintra.Integrations.OpenAI.Mapping
                 nameof(style), style, "Непідтримуваний стиль зображення")
         };
 
-        public static GeneratedImageFormat Map(ImageFormat format) => format switch
+        public static GeneratedImageFormat Map(this ImageFormat format) => format switch
         {
             ImageFormat.Uri => GeneratedImageFormat.Uri,
             ImageFormat.Bytes => GeneratedImageFormat.Bytes,

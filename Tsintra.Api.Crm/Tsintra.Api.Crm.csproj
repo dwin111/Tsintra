@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0-rc.2.23480.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tsintra.Application\Tsintra.App.csproj" />
+    <ProjectReference Include="..\Tsintra.Domain\Tsintra.Core.csproj" />
+    <ProjectReference Include="..\Tsintra.Infrastructure\Tsintra.Infrastructure.csproj" />
+    <ProjectReference Include="..\Tsintra.Integrations\Tsintra.Integrations.csproj" />
+    <ProjectReference Include="..\Tsintra.MarketplaceAgent\Tsintra.MarketplaceAgent.csproj" />
+    <ProjectReference Include="..\Tsintra.Persistence\Tsintra.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
